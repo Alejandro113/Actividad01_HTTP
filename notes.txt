@@ -1,0 +1,48 @@
+BUILDING PROJECT
+1)touch .gitignore
+    *It is used to avoid uploading files when the project is uploaded to github.
+    *This is done in order to make the project load faster.
+
+2)touch .editorconfig
+    *This file will have the editing configuration of the project.
+
+3)touch .eslint.json
+    *It will have settings to better analyze the code and the format.
+
+4)touch index.js
+    *In this file we will encode our project.
+
+5)npm init -y
+    *With this command we initialize the project
+    *Initializing the project creates the package.json file.
+
+6)npm i express prettier eslint-config-prettier eslint-plugin-prettier prettier nodemon -D
+    *This command is used to install necessary extensions.
+    *express:Framework that allows us to make HTTP requests(get, post, put, delete, patch).
+    *-D:development enviroment.
+
+    /inside the package.json in the development dependencies object, we can see the installations 
+     that we made with the command.
+
+7)npm i dotenv
+    *Install dotenv to be able to work with the .env file and use the environment variables.
+
+8).env
+    *enviromen variables like: string connection with mondoDB or the PORT.
+
+9)npm i mongoose
+    *Intall mongoose to connect to the database
+
+10)mkdir src
+    *mkdir routes
+        touch index.js
+        touch person.router.js
+    *mkdir models
+        touch person_model.js
+
+11)Update package.json
+    *this update is to run the app correctly when excecute command npm run (dev, ).
+    *update object scripts data.
+    *env: excecute app with nodemon as developer enviroment.
+    *start: excecute with node
+    *lint: applies code format with eslint library
